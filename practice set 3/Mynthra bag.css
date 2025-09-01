@@ -1,0 +1,30 @@
+.click-me{
+      color:black;
+      padding: 5px 15px;
+    }
+    #click{
+      background-color: rgb(146, 237, 35);
+      width: 100px;
+      height: 30px;
+      margin: 5px;
+      border-radius: 20px;
+      border: none;
+    }
+    #click1{
+      background-color: white;
+      width: 150px;
+      height: 30px;
+      margin: 5px;
+      border-radius: 10px;
+      border: 2px solid black;
+      text-transform: uppercase;
+    }
+
+    #click2{
+      background-color: rgb(146, 237, 35);
+      width: 200px;
+      height: 30px;
+      margin: 5px;
+      border-radius: 20px;
+      border: none;
+    }
