@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bat Ball Stump Cricket Match</h1>
+  <button onclick="
+  const yourChoice=('You have choosen bat');
+  let computerChoice=randomMsg();
+  let result=comparision(computerChoice,'bat');
+  showResult(yourChoice,computerChoice,result);
+  ">bat</button>
+
+
+  <button onclick="
+  computerChoice=randomMsg();
+  yourChoice=('you have choosen ball');
+  result=comparision(computerChoice,'ball');
+  showResult(yourChoice,computerChoice,result);
+  ">ball</button>
+
+
+  <button onclick="
+  yourChoice=('You have choosen stump');
+  computerChoice=randomMsg();
+  result=comparision(computerChoice,'stump');
+  showResult(yourChoice,computerChoice,result);
+  ">stump</button>
+
+
+
+<script>
+  
+  function randomMsg(){
+    let randomNumber= Math .random() * 3;
+    if (randomNumber>0 && randomNumber<=1){
+    return 'bat';
+    // compChoice=(' Computer choice is bat');
+    }
+    else if(randomNumber>1 && randomNumber<=2){
+      return 'ball';
+      // compChoice=(' Computer choice is ball');
+    }
+    else{
+      return 'stump';
+      // compChoice=(' Computer choice is stump');
+      
+    }
+    }
+
+  function comparision(computerMove,userMove){
+    if(userMove==='bat'){
+      if(computerMove ==='bat'){
+        return (' match was tied');
+      }
+      else if(computerMove==='ball'){
+        return (' you wins');
+      }
+      else{
+        return (' Computer wins');
+      }
+    }
+    else  if(userMove==='ball'){
+      if(computerMove==='ball'){
+        return (' match was tied');
+      }
+      else if(computerMove==='stump'){
+        return ('you wins');
+      }
+      else{
+        return (' Computer wins');
+      }
+    }
+    else{
+      if(computerMove==='stump'){
+        return (' match was tied');
+      }
+
+      else if(computerMove==='bat'){
+        return ('you wins');
+      }
+      else{
+        return (' Computer wins');
+      }
+    }
+  }
+  
+  function showResult(yourChoice,computerChoice,result){
+    alert(`${yourChoice} computer has choosen ${computerChoice} ${result}`);
+  }
+
+</script>
+  
+</body>
+</html>
