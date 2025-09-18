@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <script>
+
+    let object={
+      price:150,
+      size:'L',
+      rating:{
+        star:5,
+        view:138,
+      },
+    }
+
+    console.log(typeof object);
+    console.log(object);
+    let new1 =JSON.stringify(object);
+
+    console.log(typeof new1);
+    console.log(new1);
+    
+    let new2=JSON.parse(new1);
+    console.log(typeof new2);
+    console.log(new2);
+
+    console.log(object.rating.star);
+  </script>
+</body>
+</html>
